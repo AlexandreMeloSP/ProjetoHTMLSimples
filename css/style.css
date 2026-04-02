@@ -721,6 +721,35 @@ section.resume-section .resume-item .resume-date {
     padding-top: 40px;
 }
 
+#contact .contact-layout {
+    align-items: flex-start;
+    row-gap: 30px;
+}
+
+#contact .contact-info-column {
+    margin-top: 10px;
+}
+
+#contact .contact-cont2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#contact .contact-social-icons {
+    margin-top: 30px;
+}
+
+#contact .contact-social-icons .list-inline-item {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    #contact .contact-info-column {
+        margin-top: 0;
+    }
+}
+
 .contact-box-desc h3 {
     color: #555;
 }
@@ -757,11 +786,21 @@ section.resume-section .resume-item .resume-date {
         color: #717171;
     }
 
+    #contact .contact-layout {
+        row-gap: 20px;
+    }
+
+    #contact .contact-info-column,
+    #contact .contact-social-icons {
+        margin-top: 20px;
+    }
+
     .contact-box-desc {
         text-align: center;
     }
 
-    #contact .social-icon-f {
+    #contact .social-icon-f,
+    #contact .contact-social-icons {
         text-align: center;
     }
 }
